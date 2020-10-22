@@ -12,8 +12,25 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/webcomponentsjs/1.2.0/webcomponents-loader.js"></script>
         <!--Load your custom element-->
         <script src="http://localhost:4201/app-vue-element.js"></script>
+        <script src="http://localhost:4202/direflowBundle.js"></script>
+        <style>
+            .main{
+                display: flex;
+                align-items: center;
+            }
+            .main__child{
+                width: 400px;
+            }
+        </style>
     </head>
     <body>
-        <app-vue-element></app-vue-element>
+        <div class="main">
+            <div class="main__child">
+                <app-vue-element></app-vue-element>
+            </div>
+            <div class="main__child">
+                <app-direflow></app-direflow>
+            </div>
+        </div>
     </body>
 </html>
