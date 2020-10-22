@@ -5,6 +5,7 @@
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
+    "build:element": "vue-cli-service build --target wc --name app-vue-element ./src/App.vue",
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
