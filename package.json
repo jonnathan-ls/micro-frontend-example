@@ -1,0 +1,25 @@
+{
+  "name": "micro-frontend-example",
+  "version": "1.0.0",
+  "description": "Example project for micro frontend architecture, contemplating 3 different frameworks",
+  "main": "index.js",
+  "scripts": {
+    "start:vue": "cd ./packages/app-vue && npm run serve:element",
+    "start:angular": "cd ./packages/app-angular && npm run serve:element",
+    "start:direflow": "cd ./packages/app-direflow && npm run serve:element",
+    "start:base": "http-server ./base"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jonnathan-ls/micro-frontend-example.git"
+  },
+  "keywords": [
+    "JLS"
+  ],
+  "author": "JLS",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jonnathan-ls/micro-frontend-example/issues"
+  },
+  "homepage": "https://github.com/jonnathan-ls/micro-frontend-example#readme"
+}

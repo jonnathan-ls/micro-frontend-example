@@ -1,9 +1,5 @@
 .app {
-  width: 400px;
-  padding: 3rem;
-  box-sizing: border-box;
-  background-color: white;
-  font-family: 'Noto Sans JP', sans-serif;
+  padding: 3rem 0;
 }
 
 .top {
@@ -33,6 +29,5 @@
 }
 
 .header-title {
-  color: #5781C2;
-  font-family: 'Advent Pro', sans-serif;
+  color: 4b6a97;
 }

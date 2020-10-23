@@ -30,7 +30,7 @@ const App: FC<IProps> = (props) => {
 };
 
 App.defaultProps = {
-  componentTitle: 'App Direflow',
+  componentTitle: 'Micro Frontend 3 - Direflow Works',
 }
 
 export default App;

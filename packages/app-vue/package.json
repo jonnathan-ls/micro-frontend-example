@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
-    "serve:element": "http-server -p 4201 ./dist",
+    "serve:element": "npm run build:element && http-server -p 4201 ./dist",
     "build": "vue-cli-service build",
     "build:element": "vue-cli-service build --target wc --name app-vue-element ./src/App.vue",
     "lint": "vue-cli-service lint"

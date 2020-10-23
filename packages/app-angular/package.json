@@ -4,7 +4,7 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "serve:element": "http-server -p 4203 ./elements",
+    "serve:element": "npm run build:elements && http-server -p 4203 ./elements",
     "build": "ng build",
     "build:elements": "ng build --output-hashing none && node build-elements.js",
     "test": "ng test",

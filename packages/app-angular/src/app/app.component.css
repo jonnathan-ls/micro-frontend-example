@@ -1,5 +1,6 @@
 .angular-title{
-    color: black;
+    color: #e52a3a;
+    margin: 0;
 }
 .angular-container{
     display: flex;
