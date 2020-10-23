@@ -1,0 +1,38 @@
+.app {
+  width: 400px;
+  padding: 3rem;
+  box-sizing: border-box;
+  background-color: white;
+  font-family: 'Noto Sans JP', sans-serif;
+}
+
+.top {
+  width: 100%;
+  height: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 1rem;
+}
+
+.bottom {
+  width: 100%;
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  padding-top: 1rem;
+}
+
+.header-image {
+  width: 165px;
+  height: 165px;
+  background: url('https://silind-s3.s3.eu-west-2.amazonaws.com/direflow/logo.svg');
+  background-size: contain;
+}
+
+.header-title {
+  color: #5781C2;
+  font-family: 'Advent Pro', sans-serif;
+}
