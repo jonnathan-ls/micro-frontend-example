@@ -1,7 +1,7 @@
 <template>
-  <div id="app">
+  <div class="app-vue">
     <img alt="Vue Logo" src="./assets/logo.png">
-    <HelloWorld msg="Micro Frontend 1 - Vue Works"/>
+    <HelloWorld msg="Micro Frontend 1"/>
   </div>
 </template>
 
@@ -17,12 +17,11 @@ export default {
 </script>
 
 <style>
-#app {
+.app-vue {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: 41b883;
   margin-top: 1rem;
 }
 </style>

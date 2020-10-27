@@ -17,12 +17,13 @@ const App: FC<IProps> = (props) => {
 
   return (
     <Styled styles={styles}>
-      <div className='app'>
+      <div className='app-direflow'>
         <div className='top'>
           <div className='header-image' />
         </div>
         <div className='bottom'>
           <h2 className='header-title'>{props.componentTitle}</h2>
+          <h2 className='header-title'>Direflow Works</h2>
         </div>
       </div>
     </Styled>
@@ -30,7 +31,7 @@ const App: FC<IProps> = (props) => {
 };
 
 App.defaultProps = {
-  componentTitle: 'Micro Frontend 3 - Direflow Works',
+  componentTitle: 'Micro Frontend 3',
 }
 
 export default App;

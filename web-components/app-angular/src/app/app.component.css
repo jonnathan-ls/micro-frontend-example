@@ -1,8 +1,8 @@
 .angular-title{
     color: #e52a3a;
-    margin: 0;
+    margin: 0.3rem;
 }
-.angular-container{
+.app-angular{
     display: flex;
     align-items: center;
     flex-direction: column;

@@ -4,10 +4,10 @@
   "description": "Example project for micro frontend architecture, contemplating 3 different frameworks",
   "main": "index.js",
   "scripts": {
-    "start:vue": "cd ./packages/app-vue && npm run serve:element",
-    "start:angular": "cd ./packages/app-angular && npm run serve:element",
-    "start:direflow": "cd ./packages/app-direflow && npm run serve:element",
-    "start:base": "http-server ./base"
+    "start:vue": "cd ./web-components/app-vue && npm run serve:element",
+    "start:angular": "cd ./web-components/app-angular && npm run serve:element",
+    "start:direflow": "cd ./web-components/app-direflow && npm run serve:element",
+    "start:base": "http-server --host teste.com -p 4200 ./base"
   },
   "repository": {
     "type": "git",

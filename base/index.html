@@ -15,28 +15,90 @@
         <script src="http://localhost:4203/app-angular-element.js"></script>
 
         <style>
-            .main{
+            body{
+                margin: 0;
+                text-align: center;
+            }
+            h1{
+                margin: 0;
+                color: white;
+                padding: 1rem;
+                background-color: darkblue;
+                border-bottom: 5px solid white;
+            }
+            .sub-title{
+                margin: 0;
+                padding: 1rem;
+                color: darkgray;
+                background: lightgray;
+            }
+            header{
+                top: 0;
+                width: 100%;
+                position: fixed;
+            }
+            main{
                 display: flex;
+                margin-top: 9rem;
                 align-items: center;
                 flex-direction: column;
-            }
-            .main__child{
-                width: 400px;
             }
         </style>
     </head>
     
     <body>
-        <div class="main">
-            <div class="main__child">
-                <app-vue-element></app-vue-element>
-            </div>
-            <div class="main__child">
-                <app-angular-element></app-angular-element>
-            </div>
-            <div class="main__child">
-                <app-direflow-element></app-direflow-element>
-            </div>
-        </div>
+        <header>
+            <h1> Micro Front-End</h1>
+            <h2 class="sub-title"> Web Components</h2>
+        </header>
+        <main>
+            <app-vue-element id="wc-vue"></app-vue-element>
+            <app-angular-element id="wc-angular"></app-angular-element>
+            <app-direflow-element id="wc-direflow"></app-direflow-element>
+        </main>
+        <script>
+            (function() {
+                const components = [ 'angular', 'direflow', 'vue' ];
+
+                const showHide = (id, value) => 
+                    document.querySelector(`#${id}`).style.display = value;
+
+                function hideComponent(){
+                    showHide(this.attributes.id.textContent, 'none');
+                }
+
+                components.forEach(component => {
+                    document
+                        .querySelector(`#wc-${component}`)
+                        .addEventListener("click", hideComponent);
+                });
+
+                function showComponents(){
+                    components.forEach(c => showHide(`wc-${c}`, 'block'));
+                }
+
+                document
+                    .querySelector(`.sub-title`)
+                    .addEventListener("click", showComponents);
+
+                components.forEach(component => {
+                    setTimeout(()=>{
+                        const el = document.querySelector(`#wc-${component}`);
+                        
+                        const loadingFailure = 
+                            !el.innerHTML.length && !el.shadowRoot;
+    
+                        if (loadingFailure){
+                            el.style.fontSize = '16px';
+                            el.style.marginTop = '2rem';
+                            el.style.color = 'lightcoral';
+                            el.style.fontFamily = 'monospace';
+                            el.innerHTML = `APP-${component.toUpperCase()} INDISPONÍVEL`;
+                        }
+                    }, 1000)
+                });
+            })();
+            
+        </script>
     </body>
 </html>
