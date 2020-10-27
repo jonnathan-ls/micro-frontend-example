@@ -1,0 +1,28 @@
+body{
+    margin: 0;
+    text-align: center;
+}
+h1{
+    margin: 0;
+    color: white;
+    padding: 1rem;
+    background-color: darkblue;
+    border-bottom: 5px solid white;
+}
+.sub-title{
+    margin: 0;
+    padding: 1rem;
+    color: darkgray;
+    background: lightgray;
+}
+header{
+    top: 0;
+    width: 100%;
+    position: fixed;
+}
+main{
+    display: flex;
+    margin-top: 9rem;
+    align-items: center;
+    flex-direction: column;
+}
